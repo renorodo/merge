@@ -1,0 +1,13 @@
+import pytest
+import merge_para_test as a
+
+@pytest.mark.parametrize(
+    "array_a, array_b, expected",
+    [
+        ([5, 4, 1], [0, 6, 2], [0, 1, 2, 4, 5, 6]),
+        ([3, 1], [0, 89, 2], [0, 1, 2, 3, 89]),
+    ]
+)
+
+def test_merge(array_a, array_b, expected):
+    assert a.merge(array_a, array_b) == expected
