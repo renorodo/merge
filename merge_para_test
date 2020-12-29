@@ -1,0 +1,5 @@
+def merge(array_a, array_b):
+
+    array_ab = array_a + array_b
+    array_ab.sort()
+    return array_ab
