@@ -1,0 +1,23 @@
+def merge(array_a, array_b):
+
+    array_ab = array_a + array_b
+    array_ab.sort()
+    return array_ab
+
+a = int(input("How many number in the first list: "))
+b = int(input("How many number in the second list: "))
+
+lis_a = [None] * a
+lis_b = [None] * b
+
+print("Insert the " + str(a) + " for the first list")
+
+for index_a in range(len(lis_a)):
+    lis_a[index_a] = int(input("Numer in " + str(index_a) + ": "))
+
+print("Insert the " + str(a) + " for the second list")
+
+for index_b in range(len(lis_b)):
+    lis_b[index_b] = int(input("Numer in " + str(index_b) + ": "))
+
+print(merge(lis_a, lis_b))
